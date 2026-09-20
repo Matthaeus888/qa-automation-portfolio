@@ -1,6 +1,6 @@
 <div align="center">
 
-# QA Automation Portfolio
+# QA Automation Portfolio - 이인규
 
 **CI/CD 기반 QA의 전체 프로세스를 AI agent가 실행하며 사람이 판단,통제하는 자동화 프로젝트**
                    
