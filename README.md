@@ -124,6 +124,11 @@ flowchart TD
   클래스만 수정하면 되도록 관심사를 분리했습니다.
 - 모든 Page Object가 `BasePage`를 상속해, 광고 오버레이 방어·클릭 재시도 로직을
   한 곳에서만 구현하고 전체에 일관 적용합니다(상세: [트러블슈팅 문서](./docs/troubleshooting/ad-overlay.md)).
+- Playwright MCP는 코드를 작성하기 전, 실제 페이지의 Locator(선택자)와 동작을
+조회 전용으로 미리 확인하는 개발 보조 도구로만 사용했다(AUTOMATION_GUIDE 5절
+"실제 페이지 탐색 절차"). 예를 들어 특정 버튼의 data-qa 속성이 무엇인지, 장바구니
+합계가 실제로 얼마로 계산되는지를 코드 작성 전에 실측으로 검증하고, 그 근거(날짜·URL)를
+코드 주석에 남겼다. 실제 클릭·입력 등 테스트 동작 자체를 수행하는 것은 전부 Selenium WebDriver다.
 
 ## 발견한 결함
 
@@ -252,6 +257,7 @@ qa-automation-portfolio/
 | 언어 | Python (자동화 코드 한정 PEP8: 4칸 들여쓰기, snake_case) |
 | 자동화 도구 | Selenium WebDriver |
 | 테스트 러너 | pytest |
+| 개발 보조 도구 | Playwright |
 | 설계 패턴 | Page Object Model |
 | 리포팅 | pytest-html + JUnit XML |
 | CI/CD | GitHub Actions |
