@@ -12,7 +12,7 @@
 ![pytest](https://img.shields.io/badge/pytest-passing-0A9EDC)
 ![Tests](https://img.shields.io/badge/automated_TCs-76-informational)
 
-[이슈 리포트](./docs/defects/README.md) · [트러블슈팅](./docs/troubleshooting/) · [AI 에이전트 설계](./docs/AI_AGENTS.md)
+[결함 리포트](./docs/defects/README.md) · [트러블슈팅](./docs/troubleshooting/) · [AI 에이전트 설계](./docs/AI_AGENTS.md)
 
 </div>
 
@@ -21,7 +21,7 @@
 ## 프로젝트 소개
 
 1.이커머스 연습 사이트의 7개 기능(로그인/로그아웃, 회원가입/계정삭제, 상단 네비게이션, 상품 검색, 장바구니, 상품 상세, 페이지 UI)에 걸쳐 76건의 Test Case를 자동화(Selenium + pytest + Page Object Model)했습니다.
-테스트 자동화 과정에서 실제 결함 2건을 발견하고 재현 절차·근본 원인까지 분석해 이슈 리포트를 생성했습니다. → [이슈 리포트 보기](./docs/defects/README.md)
+테스트 자동화 과정에서 실제 결함 2건을 발견하고 재현 절차·근본 원인까지 분석해 결함 리포트를 생성했습니다. → [결함 리포트 보기](./docs/defects/README.md)
 
 2.이커머스 연습 사이트[(automationexercise.com)](https://automationexercise.com)를 대상으로, PRD 작성 → TC 설계/작성 → 자동화 대상 선정 및 계획 → 코드 구현 → CI/CD(자동화 테스트 포함) → Slack 알림과 Google sheet에 결과 작성까지 QA 프로세스 전체를 설계·구현했습니다.
 
@@ -68,7 +68,7 @@ tests/test_login.py::test_logout_via_direct_url PASSED
 [테스트 완료 - CD 산출물(Slack Webhook)]
 <img width="888" height="736" alt="스크린샷 2026-09-16 150953" src="https://github.com/user-attachments/assets/defa9f04-4fd6-4f37-aa7f-b6da031c8ed6" />
 
-[테스트 완료 - CD 산출물(이슈 리포트)
+[테스트 완료 - CD 산출물(결함 리포트)
 <img width="1046" height="185" alt="스크린샷 2026-09-18 160213" src="https://github.com/user-attachments/assets/2a409746-1645-4991-a3ae-ed3a517cc63d" />
 
 ## 이 프로젝트로 증명하는 역량
